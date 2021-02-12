@@ -23,7 +23,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew genSources
     - name: Upload a Build Artifact
 
       uses: actions/upload-artifact@v2.2.2
@@ -36,6 +36,6 @@ jobs:
 
        # A file, directory or wildcard pattern that describes what to upload
 
-        path: build/*
+        path: *
 
        # The desired behavior if no files are found using the provided path.
