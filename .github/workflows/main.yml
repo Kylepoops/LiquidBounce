@@ -5,9 +5,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ master ]
+    branches: [ nextgen ]
   pull_request:
-    branches: [ master ]
+    branches: [ nextgen ]
 
 jobs:
   build:
@@ -36,6 +36,6 @@ jobs:
 
        # A file, directory or wildcard pattern that describes what to upload
 
-        path: target/*.jar
+        path: build/*
 
        # The desired behavior if no files are found using the provided path.
